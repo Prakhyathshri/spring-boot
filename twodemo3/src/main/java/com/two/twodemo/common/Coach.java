@@ -1,6 +1,5 @@
-package com.yuva.core2;
+package com.two.twodemo.common;
 
 public interface Coach {
-
     String getDailyWorkout();
 }

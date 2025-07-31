@@ -1,4 +1,4 @@
-package com.yuva.core2;
+package com.yuva.core2.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

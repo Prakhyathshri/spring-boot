@@ -1,5 +1,6 @@
-package com.yuva.core2;
+package com.two.twodemo.rest;
 
+import com.two.twodemo.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,18 +8,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
-    //Define a private field for the dependency
+    //define a private field for dependency
     private Coach myCoach;
 
-    //Define a constructor for dependency injection
+    // define a constructor for dependency injection
     @Autowired
-    public  DemoController(Coach theCoach){
+    public DemoController(Coach theCoach){
         myCoach = theCoach;
     }
 
     @GetMapping("/dailyworkout")
-    public String getdailywokrout(){
+    public String getDailyWorkout(){
         return myCoach.getDailyWorkout();
     }
-
 }

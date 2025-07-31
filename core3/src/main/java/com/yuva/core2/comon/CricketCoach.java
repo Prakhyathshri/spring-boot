@@ -1,4 +1,4 @@
-package com.yuva.core2;
+package com.yuva.core2.comon;
 
 import org.springframework.stereotype.Component;
 
